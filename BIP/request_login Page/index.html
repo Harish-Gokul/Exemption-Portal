@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+    <title>Dummy BIP Login Page</title>
+    <script defer src="../../StudentsDetails/clg_data.js"></script>
+    <script defer src="bip_login_getInfo.js"></script>
+    <script defer src="bip_login_script.js"></script>
+      
+</head>
+<body onload="loadLocalData()">
+     
+    <div class="header">
+        <h2 style="padding-top: 20px;">REQUEST EXEMPTION LOGIN PAGE </h2>
+    </div>
+    
+    <div class="loginBox rounded bg-white shadow overflow-auto  " >
+        <h2>Request Exemption Portal</h2>
+        <hr>
+        <div style="padding: 20px;">
+           <h4 style="font-weight: 300;text-align: left;">Staff Id / Roll No</h4> 
+           <input class="form-control" type="text" placeholder="Enter Staff Id Or Student Roll Number" id="rollNoHTML">
+           <br>
+           <h4 style="font-weight: 300;text-align: left;" >Password</h4>
+           <input   class="form-control" type="password" id="passwordHTML" placeholder="Enter Your password">
+        </div>
+        <div>
+          <button onclick="getStudent()" class="btn btn-info" >Login</button>  
+        </div>
+        <br>
+        
+    </div>
+</body>
+</html>

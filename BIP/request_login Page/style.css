@@ -1,0 +1,17 @@
+    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(185, 185, 185, 0.498);
+}
+.header>h2{
+    text-align: center;
+}
+.loginBox{
+    height: max-content;margin:5% 20%;text-align: center;
+ 
+}
+.loginBox>h2{
+    margin: 20px;
+    
+}

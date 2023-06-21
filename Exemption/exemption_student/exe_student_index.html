@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="exe_student_style.css">
+    <script defer src="exe_student_getInfo.js"></script>
+    <script defer src="exe_student_script.js"></script>
+     
+    <title>Student Portal</title>
+</head>
+<body onload="loadDataLS()">
+    <div class="header">
+        <h3 style="font-weight: bold;">Welcome Back <span id="dispName">Harish</span>!</h3>
+        <h3>VERIFY EXEMPTION PORTAL</h3>
+    </div>
+    <div class="rounded bg-white shadow overflow-auto  m-5 mb-0" style="height: max-content;padding: 10px;text-align: center;" >
+        <h4>Student Details</h4>
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h4 style="font-weight: bold;">Student Name</h4>
+                <h4 id="studentNameHTML">HARISH GOKUL G</h4>
+              </div>
+              <div class="col-sm">
+                <h4 style="font-weight: bold;">Roll No</h4>
+                <h4 id="rollNoHTML">201MC116</h4>
+              </div>
+              <div class="col-sm">
+                <h4 style="font-weight: bold;">Department</h4>
+                <h4 id="departmentHTML">MECHATRONICS</h4>
+              </div>
+            </div>
+          </div>
+
+<br>  
+          <div class="container">
+            <div class="row">
+              <div class="col-sm" style="color: green">
+                <h4 style="font-weight: bold; ">Request Accepted</h4>
+                <h4 id="dispAcceptedCount">0</h4>
+              </div>
+              <div class="col-sm">
+                <h4 style="font-weight: bold ">Total Credits Earned</h4>
+                <h4 id="creditsEarnedHTML">6</h4>
+              </div>
+              <div class="col-sm" style="color: red;">
+                <h4 style="font-weight: bold; ">Request Rejected </h4>
+                <h4 id="dispRejectedCount">0</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            
+          </div>
+          <hr>
+          <table class="table table-striped">
+            <thead class="table-dark text-center sticky-top" id="thead">
+              <tr>
+                <td>Bip ID</td>
+                <td >Category</td>
+                <td>courseName</td>
+                <td>Weeks Attented</td>
+                <td >Credits Earned</td>
+                <td>Is Valid For Exemption</td>
+              </tr>
+            </thead>
+            <tbody id="tableBodyHTML">
+
+            </tbody>
+        </table>
+</body>
+</html>

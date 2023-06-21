@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="bip_staff_style.css">
+    <script defer src="../../StudentsDetails/clg_data.js"></script>
+    <script defer src="bip_staff_getInfo.js"></script>
+    <script defer src="bip_staff_script.js"></script>
+</head>
+<body onload="loadFromLS()">
+    <div class="header">
+        <h4 style="margin-top: 10px;font-weight: bold;">Welcome Back</h4>
+        <h4 style="font-weight: bold;">Certificate Validation Page</h4>
+        <br>
+        <div class="container">
+        <div class="row">
+          <div class="col">
+             
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="searchInputHTML" onkeyup="searchStudent()" placeholder="Enter Student Roll Number to search">
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+
+ 
+  </div>
+        <div class="rounded bg-white shadow overflow-auto h-75 m-5 mt-0 mb-0" style="padding-top: 0px;">  
+            <table class="table table-striped">
+              <thead class="table-dark text-center sticky-top" id="thead">
+                <tr>
+                  <td >Roll No</td>
+                  <td >Name</td>
+                  <td >Department</td>
+                  <td >Online course/Internship Name</td>
+                  <td>courseName</td>
+                  <td >Days Attented</td>
+                  <td>Opting For</td>
+                  <td>Bip ID</td>
+                  <td>Decision</td>
+                  
+                </tr>
+              </thead>
+              <tbody class="text-center" id="mainTableBodyHTML">
+                
+              </tbody>
+      
+            </table>
+            <br>
+          </div>
+    
+</body>
+</html>

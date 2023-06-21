@@ -1,0 +1,49 @@
+var aero2023=[];
+change array name and funtion arry push and year 
+
+function createObj(rollNo,Name,department)
+{
+ var obj = {rollNo:rollNo,name:Name,emailId:null,departmentName:department,onlineCourseCount:0,internshipCount:0,oneCreditCount:0,addonCount:0,isElegible:null};
+    aero2023.push(obj)
+}
+for(var i=0;i<tableLength;i++)
+{
+        var year = document.getElementsByClassName("waffle")[0].children[1].children[i].children[2].innerText;
+        if(year == "IV")
+        {
+            var rollnumber = document.getElementsByClassName("waffle")[0].children[1].children[i].children[3].innerText;
+            var name =  document.getElementsByClassName("waffle")[0].children[1].children[i].children[4].innerText;
+            var department =  document.getElementsByClassName("waffle")[0].children[1].children[i].children[6].innerText;
+             createObj(rollnumber,name,department);
+        }
+             
+}
+
+
+var batch2024=[];
+//change array name and funtion arry push and year 
+
+var olLength =document.getElementsByClassName("waffle").length
+var table = document.getElementsByClassName("waffle")[0];
+
+function createObj(rollNo,Name,department)
+{
+ var obj = {rollNo:rollNo,name:Name,emailId:null,departmentName:department,onlineCourseCount:0,internshipCount:0,oneCreditCount:0,addonCount:0,isElegible:null};
+    aero2023.push(obj)
+}
+
+
+
+
+for(var i=0;i<tableLength;i++)
+{
+        var year =table.children[1].children[i].children[2].innerText;
+        if(year == "IV")
+        {
+            var rollnumber = table.children[1].children[i].children[3].innerText;
+            var name =  table.children[1].children[i].children[4].innerText;
+            var department =  table.children[1].children[i].children[6].innerText;
+             createObj(rollnumber,name,department);
+        }
+             
+}
